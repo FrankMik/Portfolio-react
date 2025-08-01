@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  
+  display: flex;
+  justify-content: space-between; /* Text links, Icons rechts */
+  align-items: center;
+  color: #ccc;
+  box-sizing: border-box;
+}
+
+.footer-left {
+  font-size: 1rem;
+  white-space: nowrap; /* verhindert Umbruch */
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px; /* Abstand zwischen Icons */
+}
+
+.footer-right a {
+  color: #00bcd4;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}

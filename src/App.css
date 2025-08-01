@@ -1,3 +1,4 @@
+/* Basis Reset */
 * {
   box-sizing: border-box;
 }
@@ -5,14 +6,14 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Notlösung, aber auch Schutz */
+  overflow-x: hidden; /* Achtung: kann horizontales Scrollen unterdrücken */
 }
 
 body {
-  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
   color: #ffffff;
+  margin: 0;
 }
 
 .App {
@@ -35,11 +36,30 @@ p {
   line-height: 1.6;
 }
 
-/* Navigation */
+section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #333;
+  text-align: center;
+  scroll-margin-bottom: 100px; /* Offset für fixierte Navbar */
+}
+
+section:first-of-type {
+  padding-top: 100px;
+}
+
+section h2 {
+  color: #00bcd4;
+  margin-bottom: 15px;
+}
+
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
+  height: 80px;
   width: 100%;
   background-color: #1f1f1f;
   padding: 15px 30px;
@@ -50,14 +70,12 @@ p {
   box-sizing: border-box;
 }
 
-/* Bild + Name Container */
 .navbar-left {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-/* Bild links oben */
 .nav-profile-pic {
   width: 40px;
   height: 40px;
@@ -66,69 +84,52 @@ p {
   border: 2px solid #00bcd4;
 }
 
-/* Abstand nach navbar */
-.navbar-spacer {
-  height: 80px; /* Muss zur Höhe deiner Navbar passen */
-}
-
 .navbar-left h2 {
   color: #00bcd4;
   margin: 0;
-  white-space: nowrap; /* verhindert Umbruch */
+  white-space: nowrap;
   text-align: left;
 }
 
-.navbar ul {
+/* Desktop Navigation */
+.navbar-menu {
   list-style: none;
   display: flex;
   gap: 20px;
   margin: 0;
-  margin-left: auto; /* schiebt die Navigation nach rechts */
+  padding: 0;
 }
 
-.navbar ul li a {
+.navbar-menu li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.navbar ul li a:hover {
+.navbar-menu li a:hover,
+.navbar-menu li a:focus {
   color: #00bcd4;
+  outline: 2px solid #00bcd4;
+  outline-offset: 2px;
 }
 
-/* Profilbild */
-.nav-profile-pic {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #00bcd4;
-}
-
-/* Sektionen */
-section {
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto; /* zentriert den Abschnitt horizontal */
-  border-bottom: 1px solid #333;
-  text-align: center; /* zentriert den Text in den Sektionen */
-}
-
-section h2 {
+/* Hamburger Button (Mobile) */
+.menu-toggle {
+  background: none;
+  border: none;
   color: #00bcd4;
-  margin-bottom: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none; /* default hidden */
 }
 
-.profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 20px 0;
-  border: 3px solid #00bcd4;
+/* Navbar spacer: sorgt für richtigen Abstand unter navbar */
+.navbar-spacer {
+  height: 80px;
 }
 
+/* About Section */
 .about-section {
   padding: 80px 20px;
   max-width: 1000px;
@@ -140,7 +141,7 @@ section h2 {
   flex-direction: row;
   align-items: center;
   gap: 40px;
-  flex-wrap: wrap; /* wichtig für mobile Geräte */
+  flex-wrap: wrap;
 }
 
 .about-photo {
@@ -168,4 +169,72 @@ section h2 {
   text-align: left;
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+/* Contact Links */
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contact-links li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-links a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.contact-links a:hover,
+.contact-links a:focus {
+  text-decoration: underline;
+  outline: 2px solid #00bcd4;
+  outline-offset: 2px;
+}
+
+/* Mobile Ansicht */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 80px; /* direkt unter navbar */
+    right: 0;
+    background-color: rgba(31, 31, 31, 0.98);
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid #00bcd4;
+    border-radius: 5px;
+    padding: 10px;
+    display: none; /* standardmäßig versteckt */
+    z-index: 9999;
+  }
+
+  .navbar-menu.open {
+    display: flex; /* wenn open, dann sichtbar */
+  }
+
+  .navbar-menu li {
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* About Content auf Mobile umstellen */
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    min-width: auto;
+  }
 }

@@ -1,34 +1,38 @@
-import React from "react";
-import "./Projects.css";
+import React from 'react';
+import './Projects.css';
+
+const projectList = [
+  {
+    title: 'Portfolio Website',
+    description: 'Diese Website wurde mit React erstellt und zeigt meine bisherigen Arbeiten und Skills.',
+    link: 'https://github.com/FrankMik/Portfolio-react'
+     },
+  {
+    title: 'SQL Schulprojekt',
+    description: 'Ein einfaches Datenbank-Projekt aus dem Unterricht mit SELECT-Abfragen.',
+    link: 'https://github.com/FrankMik/SQL_Unterrichtsdaten'
+  }
+  // Hier kannst du später einfach mehr Projekte ergänzen
+];
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects-section">
-      <h2>Meine Projekte</h2>
-      <div className="project-list">
-
-        <div className="project-card">
-          <h3>SQL Datenbank-Projekt</h3>
-          <p>
-            Beispielprojekt mit MariaDB und SQL – Tabellenstruktur, CRUD-Operationen und einfache Benutzeroberfläche.
-          </p>
-          <a href="https://github.com/deinGitHubAccount/sql-projekt" target="_blank" rel="noopener noreferrer">
-            Auf GitHub ansehen
-          </a>
-        </div>
-
-        <div className="project-card">
-          <h3>Portfolio-Website</h3>
-          <p>
-            Dieses Portfolio wurde mit React erstellt. Es zeigt meine Lernfortschritte als Anwendungsentwickler.
-          </p>
-          <a href="https://github.com/FrankMik/Portfolio" target="_blank" rel="noopener noreferrer">
-            Auf GitHub ansehen
-          </a>
-        </div>
-
-        {/* Du kannst weitere Projekte hier hinzufügen */}
-
+    <section id="projects">
+      <h2>Projekte</h2>
+      <div className="project-cards">
+        {projectList.map((project, index) => (
+          <div className="card" key={index}>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            {project.link ? (
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                GitHub Repo
+              </a>
+            ) : (
+              <span style={{ color: '#888' }}>Noch kein Link</span>
+            )}
+          </div>
+        ))}
       </div>
     </section>
   );
