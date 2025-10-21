@@ -3,6 +3,9 @@ import AOS from 'aos';
 import { useEffect, useState } from 'react';
 import Projects from "./components/Projects.jsx";
 import Footer from "./components/Footer.jsx"
+import fotoNav from './img/DSC_4972.jpg'
+import fotoAbout from './img/DSC_4940.jpg'
+
 import './App.css';
 
 function App() {
@@ -23,7 +26,7 @@ function App() {
     <div className="App">
       <nav className="navbar">
         <div className="navbar-left">
-          <img src="DSC_4972.jpg" alt="Michael Frank" className="nav-profile-pic" />
+          <img src={fotoNav} alt="Michael Frank" className="nav-profile-pic" />
           <h2>Michael Frank</h2>
         </div>
         <button
@@ -45,7 +48,7 @@ function App() {
 
       <section id="about" className="about-section">
         <div className="about-content">
-          <img src="DSC_4940.jpg" alt="Michael Frank" className="about-photo" data-aos="zoom-in" />
+          <img src={fotoAbout} alt="Michael Frank" className="about-photo" data-aos="zoom-in" />
           <div className="about-text">
             <h1 data-aos="fade-up">Willkommen in meinem Portfolio</h1>
             <p data-aos="fade-right">
