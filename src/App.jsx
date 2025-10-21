@@ -1,9 +1,9 @@
-import './App.css';
+
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
-import Projects from "./Projects";
-import Footer from './Footer';
+import Projects from "./components/Projects.jsx";
+import Footer from "./components/Footer.jsx"
+import './App.css';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
