@@ -14,7 +14,7 @@ const projectList = [
   },
   {
     title: 'Scrum Quitz',
-    description: 'Kleine Scrum Qiutz-Webseite',
+    description: 'Kleine Scrum Qiutz-Webseite. Gemacht nur mit HTML und CSS',
     link: 'https://frankmik.github.io/Scrum-Master/'
   }
 
