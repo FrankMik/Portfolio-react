@@ -49,8 +49,7 @@ function App() {
           <div className="about-text">
             <h1 data-aos="fade-up">Willkommen in meinem Portfolio</h1>
             <p data-aos="fade-right">
-              Mein Name ist Michael Frank. Ich bin angehender Anwendungsentwickler mit Fokus auf moderne Web-Technologien
-              wie React, JavaScript und Datenbanken. Hier präsentiere ich meine Arbeiten und Fortschritte.
+              Ich bin Michael Frank, angehender Anwendungsentwickler mit Fokus auf Full-Stack-Entwicklung und SCRUM-Zertifikat. Bis Oktober 2026 werde ich zusätzlich Zertifikate in Java, Python und AWS erworben und meine Kenntnisse in OOP, PHP, Cloud-Technologien und Künstlicher Intelligenz vertieft haben. Mit technischem Know-how, Teamgeist und schneller Umsetzungsstärke bin ich bereit, von Tag eins an echten Mehrwert ins Team zu bringen.
             </p>
           </div>
         </div>
@@ -62,7 +61,7 @@ function App() {
 
       <section id="contact">
         <h2>Kontakt</h2>
-        <p>Du möchtest mit mir in Kontakt treten? Schreib mir gerne eine E-Mail oder besuche meine Profile:</p>
+        <p> Du möchtest mit mir in Kontakt treten? Schreib mir gerne eine E-Mail oder besuche meine Profile:</p>
         <ul className="contact-links">
           <li><strong>E-Mail:</strong> <a href="mailto:michael-frank88@gmx.de" rel="noopener noreferrer">michael-frank88@gmx.de</a></li>
           <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/michael-frank-977626372" rel="noopener noreferrer">LinkedIn.com/in/michael-frank-977626372</a></li>
