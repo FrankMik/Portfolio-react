@@ -52,7 +52,7 @@ function App() {
           <div className="about-text">
             <h1 data-aos="fade-up">Willkommen in meinem Portfolio</h1>
             <p data-aos="fade-right">
-              Ich bin Michael Frank, angehender Anwendungsentwickler mit Fokus auf Full-Stack-Entwicklung und SCRUM-Zertifikat. Bis Oktober 2026 werde ich zusätzlich Zertifikate in Java, Python und AWS erworben und meine Kenntnisse in OOP, PHP, Cloud-Technologien und Künstlicher Intelligenz vertieft haben. Mit technischem Know-how, Teamgeist und schneller Umsetzungsstärke bin ich bereit, von Tag eins an echten Mehrwert ins Team zu bringen.
+              Ich bin Michael Frank, angehender Anwendungsentwickler mit Fokus auf Full-Stack-Entwicklung mit SCRUM-Zertifikat. Bis Oktober 2026 werde ich zusätzlich Zertifikate in Java, Python und AWS erworben und meine Kenntnisse in OOP, PHP, Cloud-Technologien und Künstlicher Intelligenz vertieft haben. Mit technischem Know-how, Teamgeist und schneller Umsetzungsstärke bin ich bereit, von Tag eins an echten Mehrwert ins Team zu bringen.
             </p>
           </div>
         </div>

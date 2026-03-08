@@ -8,14 +8,19 @@ const projectList = [
     link: 'https://frankmik.github.io/schere-stein-papier/'
      },
   {
-    title: 'SQL Schulprojekt',
-    description: 'Ein einfaches Datenbank-Projekt aus dem Unterricht mit SELECT-Abfragen.',
-    link: 'https://github.com/FrankMik/SQL_Unterrichtsdaten'
+    title: 'Clicker-Spiel',
+    description: 'Ein einfaches kleines Minispiel mit React, HTML und CSS',
+    link: 'https://frankmik.github.io/clicker-race/'
   },
   {
     title: 'Scrum Quitz',
     description: 'Kleine Scrum Qiutz-Webseite. Gemacht nur mit HTML und CSS',
     link: 'https://frankmik.github.io/Scrum-Master/'
+  },
+  {
+    title: 'Andere Projekte',
+    description: 'die andere Projekte können Sie auf meinem GitHub anschauen',
+    link: 'https://github.com/FrankMik'
   }
 
 ];
