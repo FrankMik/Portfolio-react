@@ -162,7 +162,7 @@ function App() {
               einen <strong>Praktikumsplatz</strong>, um mein Wissen in der Praxis einzusetzen.
             </p>
             <div className="hero-actions" data-aos="fade-up" data-aos-delay="300">
-              <a href="#contact" className="btn-primary">Praktikum anfragen</a>
+              <a href="#contact" className="btn-primary">Praktikum anbieten</a>
               <a
                 href="/Portfolio-react/michael-frank-cv.pdf"
                 className="btn-secondary"
