@@ -1,39 +1,106 @@
 .project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
   justify-content: center;
+  margin-bottom: 28px;
 }
 
 .card {
-  background-color: #1f1f1f;
-  border: 1px solid #00bcd4;
-  border-radius: 8px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 0 10px #00bcd4;
-  transition: transform 0.3s ease;
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  text-align: left;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  border-color: #00bcd4;
+  box-shadow: 0 8px 30px rgba(0,188,212,0.12);
+}
+
+.card-emoji {
+  font-size: 2rem;
+  line-height: 1;
 }
 
 .card h3 {
-  margin-top: 0;
+  margin: 0;
   color: #00bcd4;
+  font-size: 1.05rem;
 }
 
 .card p {
-  color: #ccc;
+  color: #999;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
 }
 
-.card a {
+.card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-tag {
+  font-size: 0.72rem;
+  background: rgba(0,188,212,0.1);
+  color: #00bcd4;
+  border: 1px solid rgba(0,188,212,0.25);
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-weight: 500;
+}
+
+.card-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.card-link.primary {
+  background: #00bcd4;
+  color: #121212;
+}
+
+.card-link.primary:hover { background: #00e5ff; }
+
+.card-link.secondary {
+  background: transparent;
+  color: #00bcd4;
+  border: 1px solid rgba(0,188,212,0.35);
+}
+
+.card-link.secondary:hover { background: rgba(0,188,212,0.1); }
+
+.more-projects {
+  color: #777;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.more-projects a {
   color: #00bcd4;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.card a:hover {
-  text-decoration: underline;
-}
+.more-projects a:hover { text-decoration: underline; }

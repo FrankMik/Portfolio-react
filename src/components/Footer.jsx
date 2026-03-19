@@ -26,7 +26,7 @@ function Footer() {
           <FaLinkedin />
         </a>
         <a
-          href="mailto:dein.michael-frank88@gmx.de"
+          href="mailto:michael-frank88@gmx.de"
           aria-label="E-Mail senden"
         >
           <FaEnvelope />
