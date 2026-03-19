@@ -21,7 +21,7 @@
 .card:hover {
   transform: translateY(-5px);
   border-color: #00bcd4;
-  box-shadow: 0 8px 30px rgba(0,188,212,0.12);
+  box-shadow: 0 0 18px rgba(0,188,212,0.35), 0 8px 30px rgba(0,188,212,0.15);
 }
 
 .card-featured {
