@@ -1,13 +1,16 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Impressum from './Impressum.jsx';
+import Datenschutz from './Datenschutz.jsx';
 import './Footer.css';
 
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-impressum">
+      <div className="footer-legal">
         <Impressum />
+        <span className="footer-divider">·</span>
+        <Datenschutz />
       </div>
       <div className="footer-bottom">
         <div className="footer-left">

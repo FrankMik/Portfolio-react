@@ -8,9 +8,18 @@
   border-top: 1px solid #2a2a2a;
 }
 
-.footer-impressum {
-  text-align: center;
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-divider {
+  color: #444;
+  font-size: 0.9rem;
 }
 
 .footer-bottom {
