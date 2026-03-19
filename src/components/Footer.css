@@ -2,34 +2,46 @@
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #1f1f1f;
-  
+  padding: 24px 20px 20px;
+  background-color: #1a1a1a;
+  box-sizing: border-box;
+  border-top: 1px solid #2a2a2a;
+}
+
+.footer-impressum {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.footer-bottom {
   display: flex;
-  justify-content: space-between; /* Text links, Icons rechts */
+  justify-content: space-between;
   align-items: center;
   color: #ccc;
-  box-sizing: border-box;
 }
 
 .footer-left {
-  font-size: 1rem;
-  white-space: nowrap; /* verhindert Umbruch */
+  font-size: 0.9rem;
+  color: #555;
+  white-space: nowrap;
 }
 
 .footer-right {
   display: flex;
-  gap: 20px; /* Abstand zwischen Icons */
+  gap: 20px;
 }
 
 .footer-right a {
   color: #00bcd4;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
+  font-size: 1.4rem;
+  transition: color 0.25s ease, transform 0.2s ease;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .footer-right a:hover {
   color: #ffffff;
+  transform: translateY(-2px);
   cursor: pointer;
 }

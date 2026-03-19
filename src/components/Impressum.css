@@ -1,0 +1,72 @@
+.impressum-toggle {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.2s;
+  font-family: 'Segoe UI', sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.impressum-toggle:hover { color: #00bcd4; }
+
+.impressum-box {
+  max-width: 600px;
+  margin: 20px auto 0;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 28px;
+  text-align: left;
+}
+
+.impressum-box h3 {
+  color: #00bcd4;
+  font-size: 1.1rem;
+  margin: 0 0 4px;
+}
+
+.impressum-hint {
+  font-size: 0.78rem;
+  color: #555;
+  margin: 0 0 20px;
+}
+
+.impressum-section {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.impressum-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.impressum-section h4 {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.impressum-section p {
+  color: #888;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin: 0;
+  text-align: left;
+}
+
+.impressum-section a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.impressum-section a:hover { text-decoration: underline; }
