@@ -4,6 +4,23 @@ import './Projects.css';
 
 const projectList = [
   {
+    title: 'Mini Social Media',
+    description: 'Full-Stack Social-Media-Demo mit Benutzerregistrierung, Login, Posts und Kommentaren. Backend mit Node.js & Express, Datenbank mit MariaDB, Frontend mit HTML, CSS und JavaScript.',
+    tech: ['Node.js', 'Express', 'MariaDB', 'HTML', 'CSS', 'JavaScript'],
+    live: null,
+    github: 'https://github.com/FrankMik/mini-socialmedia-demo',
+    emoji: '💬',
+    featured: true,
+  },
+  {
+    title: 'Portfolio Website',
+    description: 'Dieses Portfolio selbst — gebaut mit React, Vite und AOS-Animationen. Responsiv, Single-Page, auf GitHub Pages gehostet.',
+    tech: ['React', 'Vite', 'CSS', 'AOS'],
+    live: 'https://frankmik.github.io/Portfolio-react/',
+    github: 'https://github.com/FrankMik/Portfolio-react',
+    emoji: '🌐',
+  },
+  {
     title: 'Schere-Stein-Papier',
     description: 'Klassisches Mini-Spiel gebaut mit HTML, CSS, JavaScript und Bootstrap. Enthält Spiellogik, Ergebnisanzeige und responsives Design.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
@@ -28,12 +45,20 @@ const projectList = [
     emoji: '📋',
   },
   {
-    title: 'Portfolio Website',
-    description: 'Dieses Portfolio selbst — gebaut mit React, Vite und AOS-Animationen. Responsiv, Single-Page, auf GitHub Pages gehostet.',
-    tech: ['React', 'Vite', 'CSS', 'AOS'],
-    live: 'https://frankmik.github.io/Portfolio-react/',
-    github: 'https://github.com/FrankMik/Portfolio-react',
-    emoji: '🌐',
+    title: 'Währungsrechner',
+    description: 'Java-Konsolenanwendung zur Umrechnung von Währungen. Demonstriert objektorientierte Programmierung, Eingabevalidierung und Berechnungslogik.',
+    tech: ['Java', 'OOP'],
+    live: null,
+    github: 'https://github.com/FrankMik/java-basics/tree/main/Projects',
+    emoji: '💱',
+  },
+  {
+    title: 'Zahlen raten',
+    description: 'Zahlenratespiel als Java-Konsolenanwendung mit Zufallszahlengenerierung, Eingabevalidierung und Hinweissystem.',
+    tech: ['Java', 'OOP'],
+    live: null,
+    github: 'https://github.com/FrankMik/java-basics/tree/main/Projects',
+    emoji: '🎲',
   },
 ];
 
@@ -47,12 +72,15 @@ const Projects = () => {
       <div className="project-cards">
         {projectList.map((project, index) => (
           <div
-            className="card"
+            className={`card ${project.featured ? 'card-featured' : ''}`}
             key={index}
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
-            <div className="card-emoji">{project.emoji}</div>
+            <div className="card-top">
+              <span className="card-emoji">{project.emoji}</span>
+              {project.featured && <span className="card-featured-badge">Hauptprojekt</span>}
+            </div>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className="card-tech">
