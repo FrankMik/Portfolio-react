@@ -12,6 +12,7 @@ const projectList = [
     emoji: '💬',
     featured: true,
   },
+
   {
     title: 'Schere-Stein-Papier',
     description: 'Klassisches Mini-Spiel gebaut mit HTML, CSS, JavaScript und Bootstrap. Enthält Spiellogik, Ergebnisanzeige und responsives Design.',

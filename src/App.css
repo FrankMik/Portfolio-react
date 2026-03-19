@@ -277,7 +277,7 @@ section h2 {
 .form-input::placeholder { color: #666; }
 .form-textarea { min-height: 130px; }
 
-.contact-form .btn-primary { align-self: flex-start; }
+.contact-form .btn-primary { align-self: center; }
 
 /* ── Contact Links ── */
 .contact-links {
