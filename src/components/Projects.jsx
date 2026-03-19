@@ -33,7 +33,7 @@ const projectList = [
     title: 'Scrum-Quiz',
     description: 'Eine interaktive Quiz-Webseite zum Thema Scrum und agile Methodik — erstellt mit reinem HTML und CSS.',
     tech: ['HTML', 'CSS'],
-    live: 'https://frankmik.github.io/Scrum-Master/',
+    live: 'https://frankmik.github.io/Scrum-Master-Quiz/',
     github: 'https://github.com/FrankMik/Scrum-Master',
     emoji: '📋',
   },
