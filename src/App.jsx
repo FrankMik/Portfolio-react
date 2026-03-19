@@ -5,8 +5,8 @@ import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Timeline from "./components/Timeline.jsx";
 import Footer from "./components/Footer.jsx";
-import fotoNav from './img/DSC_4972.WebP';
-import fotoAbout from './img/DSC_4940.WebP';
+import fotoNav from './img/DSC_4972.webp';
+import fotoAbout from './img/DSC_4940.webp';
 import './App.css';
 
 const TYPING_PHRASES = [
