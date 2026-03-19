@@ -8,13 +8,39 @@ const events = [
     place: 'Bildungsträger · Deutschland',
     desc: 'Vollzeit-Umschulung mit Fokus auf Full-Stack-Entwicklung. Inhalte: Java, Python, PHP, SQL, HTML/CSS, JavaScript, React, OOP, Cloud & AWS, Künstliche Intelligenz.',
     current: true,
+    badge: null,
+  },
+  {
+    date: 'In 3 Wochen',
+    title: 'AWS Zertifizierung',
+    place: 'Zertifizierung · Cloud Computing',
+    desc: 'Zertifizierung in Amazon Web Services — Cloud-Infrastruktur, Dienste und Architektur.',
+    current: false,
+    badge: '⏳ Bald',
+  },
+  {
+    date: 'Nächste Woche',
+    title: 'Python Zertifizierung',
+    place: 'Zertifizierung · Programmierung',
+    desc: 'Zertifizierungsprüfung in Python — Grundlagen, OOP und Scripting.',
+    current: false,
+    badge: '⏳ Bald',
+  },
+  {
+    date: '2025',
+    title: 'Java Zertifikat',
+    place: 'Zertifizierung · Programmierung',
+    desc: 'Erfolgreich zertifiziert in Java-Programmierung mit Fokus auf objektorientierte Entwicklung.',
+    current: false,
+    badge: '✓ Erhalten',
   },
   {
     date: '2025',
     title: 'Scrum Master Zertifikat',
-    place: 'Zertifizierung',
+    place: 'Zertifizierung · Agile Methodik',
     desc: 'Erfolgreich zertifiziert in agiler Projektmethodik mit Scrum.',
     current: false,
+    badge: '✓ Erhalten',
   },
   {
     date: 'Bis 2025',
@@ -22,6 +48,7 @@ const events = [
     place: 'Deutschland',
     desc: 'Praktische Berufserfahrung in verschiedenen Bereichen — entschied mich für den Wechsel in die IT-Entwicklung.',
     current: false,
+    badge: null,
   },
 ];
 
@@ -44,6 +71,7 @@ const Timeline = () => {
             <div className="timeline-card">
               <span className="timeline-date">{ev.date}</span>
               {ev.current && <span className="timeline-now">Aktuell</span>}
+              {ev.badge && !ev.current && <span className={`timeline-now ${ev.badge.startsWith('✓') ? 'certified' : 'soon'}`}>{ev.badge}</span>}
               <h3 className="timeline-title">{ev.title}</h3>
               <span className="timeline-place">{ev.place}</span>
               <p className="timeline-desc">{ev.desc}</p>

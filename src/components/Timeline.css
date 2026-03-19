@@ -75,6 +75,18 @@
   vertical-align: middle;
 }
 
+.timeline-now.certified {
+  background: rgba(76,175,80,0.15);
+  color: #66bb6a;
+  border-color: rgba(76,175,80,0.3);
+}
+
+.timeline-now.soon {
+  background: rgba(255,167,38,0.15);
+  color: #ffa726;
+  border-color: rgba(255,167,38,0.3);
+}
+
 .timeline-title {
   color: #ffffff;
   font-size: 1rem;

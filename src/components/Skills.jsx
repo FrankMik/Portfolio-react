@@ -20,8 +20,8 @@ const skillGroups = [
   {
     category: 'Backend & Datenbank',
     skills: [
-      { name: 'Python',  icon: <FaPython />, level: 45 },
-      { name: 'Java',    icon: <FaJava />,   level: 40 },
+      { name: 'Java',    icon: <FaJava />,   level: 70, badge: '✓ Zertifiziert' },
+      { name: 'Python',  icon: <FaPython />, level: 65, badge: '⏳ Zertifizierung nächste Woche' },
       { name: 'PHP',     icon: <SiPhp />,    level: 40 },
       { name: 'MySQL',   icon: <SiMysql />,  level: 50 },
     ],
@@ -33,6 +33,7 @@ const skillGroups = [
       { name: 'GitHub', icon: <FaGithub />,  level: 70 },
       { name: 'Vite',   icon: <SiVite />,    level: 60 },
       { name: 'Scrum',  icon: null,          level: 75, badge: '✓ Zertifiziert' },
+      { name: 'AWS',    icon: null,          level: 50, badge: '⏳ Zertifizierung in 3 Wochen' },
     ],
   },
 ];
