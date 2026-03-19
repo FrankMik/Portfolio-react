@@ -13,14 +13,6 @@ const projectList = [
     featured: true,
   },
   {
-    title: 'Portfolio Website',
-    description: 'Dieses Portfolio selbst — gebaut mit React, Vite und AOS-Animationen. Responsiv, Single-Page, auf GitHub Pages gehostet.',
-    tech: ['React', 'Vite', 'CSS', 'AOS'],
-    live: 'https://frankmik.github.io/Portfolio-react/',
-    github: 'https://github.com/FrankMik/Portfolio-react',
-    emoji: '🌐',
-  },
-  {
     title: 'Schere-Stein-Papier',
     description: 'Klassisches Mini-Spiel gebaut mit HTML, CSS, JavaScript und Bootstrap. Enthält Spiellogik, Ergebnisanzeige und responsives Design.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
