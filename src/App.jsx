@@ -74,21 +74,21 @@ function MatrixCanvas() {
     function resize() {
       canvas.width = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
-      const cols = Math.floor(canvas.width / 16);
+      const cols = Math.floor(canvas.width / 14);
       drops = Array.from({ length: cols }, () => Math.random() * -50);
     }
 
     function draw() {
-      ctx.fillStyle = 'rgba(18,18,18,0.06)';
+      ctx.fillStyle = 'rgba(18,18,18,0.04)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.font = '13px monospace';
       drops.forEach((y, i) => {
         const ch = codeChars[Math.floor(Math.random() * codeChars.length)];
-        const alpha = Math.random() * 0.5 + 0.1;
+        const alpha = Math.random() * 0.7 + 0.3;
         ctx.fillStyle = `rgba(0,188,212,${alpha})`;
         ctx.fillText(ch, i * 16, y * 16);
         if (y * 16 > canvas.height && Math.random() > 0.975) drops[i] = 0;
-        drops[i] += 0.4;
+        drops[i] += 0.6;
       });
       animId = requestAnimationFrame(draw);
     }
