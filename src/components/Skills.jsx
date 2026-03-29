@@ -33,7 +33,7 @@ const skillGroups = [
       { name: 'GitHub', icon: <FaGithub />,  level: 70 },
       { name: 'Vite',   icon: <SiVite />,    level: 60 },
       { name: 'Scrum',  icon: null,          level: 75, badge: '✓ Zertifiziert' },
-      { name: 'AWS',    icon: null,          level: 50, badge: '⏳ Zertifizierung in 3 Wochen' },
+      { name: 'AWS',    icon: null,          level: 50, badge: '⏳ Zertifizierung in 2 Wochen' },
     ],
   },
 ];

@@ -11,7 +11,7 @@ const events = [
     badge: null,
   },
   {
-    date: 'In 3 Wochen',
+    date: 'In 2 Wochen',
     title: 'AWS Zertifizierung',
     place: 'Zertifizierung · Cloud Computing',
     desc: 'Zertifizierung in Amazon Web Services — Cloud-Infrastruktur, Dienste und Architektur.',
@@ -19,7 +19,7 @@ const events = [
     badge: '⏳ Bald',
   },
   {
-    date: '2026',
+    date: '03/2026',
     title: 'Python Zertifizierung',
     place: 'Zertifizierung · Programmierung',
     desc: 'Zertifizierungsprüfung in Python — Grundlagen, OOP und Scripting.',
@@ -27,7 +27,7 @@ const events = [
     badge: '✓ Erhalten',
   },
   {
-    date: '2025',
+    date: '02/2026',
     title: 'Java Zertifikat',
     place: 'Zertifizierung · Programmierung',
     desc: 'Erfolgreich zertifiziert in Java-Programmierung mit Fokus auf objektorientierte Entwicklung.',
@@ -35,7 +35,7 @@ const events = [
     badge: '✓ Erhalten',
   },
   {
-    date: '2025',
+    date: '10/2025',
     title: 'Scrum Master Zertifikat',
     place: 'Zertifizierung · Agile Methodik',
     desc: 'Erfolgreich zertifiziert in agiler Projektmethodik mit Scrum.',
