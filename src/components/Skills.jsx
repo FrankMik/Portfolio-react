@@ -21,7 +21,7 @@ const skillGroups = [
     category: 'Backend & Datenbank',
     skills: [
       { name: 'Java',    icon: <FaJava />,   level: 70, badge: '✓ Zertifiziert' },
-      { name: 'Python',  icon: <FaPython />, level: 65, badge: '⏳ Zertifizierung nächste Woche' },
+      { name: 'Python',  icon: <FaPython />, level: 65, badge: '✓ Zertifiziert' },
       { name: 'PHP',     icon: <SiPhp />,    level: 40 },
       { name: 'MySQL',   icon: <SiMysql />,  level: 50 },
     ],

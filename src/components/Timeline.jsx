@@ -19,12 +19,12 @@ const events = [
     badge: '⏳ Bald',
   },
   {
-    date: 'Nächste Woche',
+    date: '2026',
     title: 'Python Zertifizierung',
     place: 'Zertifizierung · Programmierung',
     desc: 'Zertifizierungsprüfung in Python — Grundlagen, OOP und Scripting.',
     current: false,
-    badge: '⏳ Bald',
+    badge: '✓ Erhalten',
   },
   {
     date: '2025',
