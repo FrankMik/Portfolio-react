@@ -11,12 +11,12 @@ const events = [
     badge: null,
   },
   {
-    date: 'In 2 Wochen',
+    date: '04/2026',
     title: 'AWS Zertifizierung',
-    place: 'Zertifizierung · Cloud Computing',
+    place: 'Zertifizierung · Cloud Practitioner',
     desc: 'Zertifizierung in Amazon Web Services — Cloud-Infrastruktur, Dienste und Architektur.',
     current: false,
-    badge: '⏳ Bald',
+    badge: '✓ Erhalten',
   },
   {
     date: '03/2026',
