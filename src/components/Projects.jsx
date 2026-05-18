@@ -14,6 +14,14 @@ const projectList = [
   },
 
   {
+    title: 'QR-CODE generator',
+    description: 'Kostenloser QR-Code Generator – 100% im Browser, kein Server, kein Tracking.',
+    tech: ['Vanilla JavaScript (ES6 Module)','HTML5','CSS3', 'CSS', 'localStorage API', 'Web Share API', 'Clipboard API',	'CSS @media print',	'qr-code-styling'],
+    live: 'https://frankmik.github.io/qr-forge/',
+    github: 'https://github.com/FrankMik/qr-forge',
+    emoji: '📱',
+  },
+  {
     title: 'Schere-Stein-Papier',
     description: 'Klassisches Mini-Spiel gebaut mit HTML, CSS, JavaScript und Bootstrap. Enthält Spiellogik, Ergebnisanzeige und responsives Design.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
