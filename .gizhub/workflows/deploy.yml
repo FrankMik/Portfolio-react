@@ -1,4 +1,4 @@
-name: Deploy Portfolio to Home Server
+name: Deploy Portfolio
 
 on:
   push:
@@ -7,6 +7,9 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted
+
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout code
@@ -22,7 +25,13 @@ jobs:
         npm install
         npm run build
 
-    - name: Copy built files to portfolio folder
+    - name: Copy to Home Server portfolio folder
       run: |
         rm -rf /home/michael/portfolio/*
         cp -r dist/* /home/michael/portfolio/
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
