@@ -14,7 +14,7 @@ const TYPING_PHRASES = [
   'import React from "react";',
   'git commit -m "Hire me!";',
   'SELECT * FROM jobs WHERE praktikum = true;',
-  'System.out.println("Bereit für Praktikum!");',
+  'System.out.println("Bereit für neue Job!");',
   'npm run start-career;',
 ];
 
@@ -146,7 +146,7 @@ function App() {
           <img src={fotoAbout} alt="Michael Frank" className="about-photo" data-aos="zoom-in" />
           <div className="about-text">
             <p className="about-badge" data-aos="fade-up">
-              🎓 Umschulung Anwendungsentwicklung · Auf Praktikumssuche
+              🎓 Umschulung Anwendungsentwicklung abgeschlossen · Auf Jobssuche
             </p>
             <h1 data-aos="fade-up" data-aos-delay="100">
               Hallo, ich bin<br /><span className="highlight">Michael Frank</span>
@@ -156,13 +156,10 @@ function App() {
               <span className={`typing-cursor ${showCursor ? 'visible' : ''}`}>|</span>
             </div>
             <p data-aos="fade-right" data-aos-delay="200">
-              Angehender Full-Stack-Entwickler in der Umschulung zum Fachinformatiker
-              Anwendungsentwicklung (06/2025 – 06/2027). Ich bringe Teamgeist,
-              Lernbereitschaft und echte Projekterfahrung mit — und suche aktuell
-              einen <strong>Praktikumsplatz</strong>, um mein Wissen in der Praxis einzusetzen.
+              Ausgebildeter Fachinformatiker für Anwendungsentwicklung mit Schwerpunkt auf Full-Stack-Entwicklung. Nach erfolgreich abgeschlossener Umschulung (06/2025 – 06/2027) suche ich aktuell eine Position als <strong>Junior Full-Stack-Entwickler</strong> oder Junior Softwareentwickler, in der ich meine praktischen Erfahrungen einbringen, mich fachlich weiterentwickeln und gemeinsam im Team an modernen Softwarelösungen arbeiten kann.
             </p>
             <div className="hero-actions" data-aos="fade-up" data-aos-delay="300">
-              <a href="#contact" className="btn-primary">Praktikum anbieten</a>
+              <a href="#contact" className="btn-primary">Job anbieten</a>
               <a
                 href="/Portfolio-react/michael-frank-cv.pdf"
                 className="btn-secondary"
@@ -183,7 +180,7 @@ function App() {
       <section id="contact" className="contact-section">
         <h2 data-aos="fade-up">Kontakt</h2>
         <p data-aos="fade-up" data-aos-delay="100">
-          Du hast einen Praktikumsplatz oder möchtest mit mir in Kontakt treten?
+          Du hast ein Jobangebot oder möchtest mit mir in Kontakt treten?
           Schreib mir gerne — ich freue mich auf deine Nachricht!
         </p>
         <form
